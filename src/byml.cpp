@@ -95,7 +95,7 @@ constexpr bool IsNonInlineType(T type) {
 }
 
 constexpr bool IsValidVersion(int version) {
-  return 1 <= version && version <= 4;
+  return 1 <= version && version <= 4 || version == 7;
 }
 
 class StringTableParser {
